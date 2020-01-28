@@ -1,0 +1,12 @@
+<p>my-component works!
+    <input [(ngModel)]="id" />
+    <input [(ngModel)]="id" readonly/> 
+    <select [(ngModel)]="pokemons">
+        <option *ngFor="let pokemon of pokemons" [ngValue] = "pokemon">
+           {{pokemon}}
+        </option>
+    </select>
+</p>
+
+
+
