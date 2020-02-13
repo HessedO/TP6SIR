@@ -1,7 +1,7 @@
 <p>my-component works!
     <input [(ngModel)]="id" />
     <input [(ngModel)]="id" readonly/> 
-    <select [(ngModel)]="pokemons">
+    <select (change)="selectId($event.target.value)" >
         <option *ngFor="let pokemon of pokemons" [ngValue] = "pokemon">
            {{pokemon}}
         </option>
